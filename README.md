@@ -201,7 +201,7 @@ This project directly supports doctoral research interests in:
 - **Extreme value theory** applied to ungauged/data-scarce Himalayan catchments
 - **Hydroclimatic risk quantification** under monsoon variability
 - **Bayesian and frequentist approaches** to return level estimation
-- **Spatial patterns of rainfall extremes** across Nepal's physiographic zones — relevant to flood hazard, landslide triggering, and water resource planning in the Hindu Kush-Himalayan region
+- **Spatial patterns of rainfall extremes** across Nepal's physiographic zones - relevant to flood hazard, landslide triggering, and water resource planning in the Hindu Kush-Himalayan region
 
 The GEV shape parameter spatial pattern (Fréchet tail on Terai plains, Weibull tails in hill and mountain stations) is consistent with published findings in Shrestha et al. (2017) and provides a foundation for regional frequency analysis extensions.
 
