@@ -83,6 +83,7 @@ Bootstrap confidence intervals (n=1,000 resamples, 95% CI) computed for all retu
 
 ### 5. Visualisation
 - **Fig 1:** GEV return period curves (log-scale) with Gringorten empirical plotting positions
+  outputs/figures/fig1_return_period_curves.png
 - **Fig 2:** GEV shape parameter ξ by station (Fréchet/Gumbel/Weibull classification)
 - **Fig 3:** 100-year return level comparison with 95% bootstrap CI error bars
 - **Fig 4:** Interactive Folium map — circle size and colour scaled to 100-year return level, clickable popups with full GEV parameters
