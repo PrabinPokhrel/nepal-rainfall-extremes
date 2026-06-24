@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a926b11aa685ca5e0042da82c197d929 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a926b11aa685ca5e0042da82c197d929" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a926b11aa685ca5e0042da82c197d929 = L.map(
+                "map_a926b11aa685ca5e0042da82c197d929",
+                {
+                    center: [28.0, 84.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2888d61729f6a72721bea6df46022b97 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2888d61729f6a72721bea6df46022b97.addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+            var circle_marker_f83c2da1351e666dac8c244fd6d034d2 = L.circleMarker(
+                [27.506, 83.416],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#673397", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.97081144191477, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_bd0f9a0f6a9b3f00c6bddacf9be1dddb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28c2cd79c712245abe2f473e0e6e6cea = $(`<div id="html_28c2cd79c712245abe2f473e0e6e6cea" style="width: 100.0%; height: 100.0%;">         <b>Bhairahawa</b><br>         Lat: 27.506<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): 0.0692<br>         μ (location): 98.9982mm<br>         σ (scale): 29.0252mm<br>         Type: Frechet (xi>0, heavy tail)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  169.7mm<br>         25-yr:  202.9mm<br>         50-yr:  229.0mm<br>         100-yr: 256.2mm<br>         </div>`)[0];
+                popup_bd0f9a0f6a9b3f00c6bddacf9be1dddb.setContent(html_28c2cd79c712245abe2f473e0e6e6cea);
+            
+        
+
+        circle_marker_f83c2da1351e666dac8c244fd6d034d2.bindPopup(popup_bd0f9a0f6a9b3f00c6bddacf9be1dddb)
+        ;
+
+        
+    
+    
+            circle_marker_f83c2da1351e666dac8c244fd6d034d2.bindTooltip(
+                `<div>
+                     Bhairahawa: 256.2mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a58f110d8ea7a7849255d2bd58bc718d = L.circleMarker(
+                [26.482, 87.264],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e33e0", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.121618992021794, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_42b94dd91d2d779da9a05b06a882179b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7e762b5d7cd4db547646e5957df1d26f = $(`<div id="html_7e762b5d7cd4db547646e5957df1d26f" style="width: 100.0%; height: 100.0%;">         <b>Biratnagar</b><br>         Lat: 26.482<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.4724<br>         μ (location): 88.7974mm<br>         σ (scale): 22.8165mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  120.4mm<br>         25-yr:  126.4mm<br>         50-yr:  129.4mm<br>         100-yr: 131.6mm<br>         </div>`)[0];
+                popup_42b94dd91d2d779da9a05b06a882179b.setContent(html_7e762b5d7cd4db547646e5957df1d26f);
+            
+        
+
+        circle_marker_a58f110d8ea7a7849255d2bd58bc718d.bindPopup(popup_42b94dd91d2d779da9a05b06a882179b)
+        ;
+
+        
+    
+    
+            circle_marker_a58f110d8ea7a7849255d2bd58bc718d.bindTooltip(
+                `<div>
+                     Biratnagar: 131.6mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e264390060fa6c249f6455d18a357c3 = L.circleMarker(
+                [29.3, 80.583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b33c3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.055847441136407, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_2e7c3d215a36b2c567e56c5f9a6d00e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_349666f262e27c888f21f2835e96477c = $(`<div id="html_349666f262e27c888f21f2835e96477c" style="width: 100.0%; height: 100.0%;">         <b>Dadeldhura</b><br>         Lat: 29.3<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.2233<br>         μ (location): 94.2596mm<br>         σ (scale): 30.2877mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  147.8mm<br>         25-yr:  163.5mm<br>         50-yr:  173.1mm<br>         100-yr: 181.3mm<br>         </div>`)[0];
+                popup_2e7c3d215a36b2c567e56c5f9a6d00e3.setContent(html_349666f262e27c888f21f2835e96477c);
+            
+        
+
+        circle_marker_0e264390060fa6c249f6455d18a357c3.bindPopup(popup_2e7c3d215a36b2c567e56c5f9a6d00e3)
+        ;
+
+        
+    
+    
+            circle_marker_0e264390060fa6c249f6455d18a357c3.bindTooltip(
+                `<div>
+                     Dadeldhura: 181.3mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae49e9a0eaac6cc9421726f3ac9ba33f = L.circleMarker(
+                [26.983, 87.35],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4133bd", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.46059544658494, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_66acf7c13d5f5fa2e06172502febaf60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b21b12053549ba6ba151be93fc63cf5 = $(`<div id="html_8b21b12053549ba6ba151be93fc63cf5" style="width: 100.0%; height: 100.0%;">         <b>Dhankuta</b><br>         Lat: 26.983<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.0174<br>         μ (location): 82.6158mm<br>         σ (scale): 24.6819mm<br>         Type: Gumbel (xi≈0)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  137.1mm<br>         25-yr:  159.4mm<br>         50-yr:  175.7mm<br>         100-yr: 191.7mm<br>         </div>`)[0];
+                popup_66acf7c13d5f5fa2e06172502febaf60.setContent(html_8b21b12053549ba6ba151be93fc63cf5);
+            
+        
+
+        circle_marker_ae49e9a0eaac6cc9421726f3ac9ba33f.bindPopup(popup_66acf7c13d5f5fa2e06172502febaf60)
+        ;
+
+        
+    
+    
+            circle_marker_ae49e9a0eaac6cc9421726f3ac9ba33f.bindTooltip(
+                `<div>
+                     Dhankuta: 191.7mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4bbf80c4e2fb3c76b2a6fb9aacd5215 = L.circleMarker(
+                [29.283, 82.167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0033ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.117338003502628, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_e20fc65f42c2b39b757d1bed2eda9689 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12ed3baa5cfa462d4d7450124757e0b6 = $(`<div id="html_12ed3baa5cfa462d4d7450124757e0b6" style="width: 100.0%; height: 100.0%;">         <b>Jumla</b><br>         Lat: 29.283<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.1631<br>         μ (location): 46.054mm<br>         σ (scale): 10.5175mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  65.9mm<br>         25-yr:  72.3mm<br>         50-yr:  76.4mm<br>         100-yr: 80.1mm<br>         </div>`)[0];
+                popup_e20fc65f42c2b39b757d1bed2eda9689.setContent(html_12ed3baa5cfa462d4d7450124757e0b6);
+            
+        
+
+        circle_marker_a4bbf80c4e2fb3c76b2a6fb9aacd5215.bindPopup(popup_e20fc65f42c2b39b757d1bed2eda9689)
+        ;
+
+        
+    
+    
+            circle_marker_a4bbf80c4e2fb3c76b2a6fb9aacd5215.bindTooltip(
+                `<div>
+                     Jumla: 80.1mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecd7ef99a04c374c997af92b196b4f5d = L.circleMarker(
+                [27.697, 85.359],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3233cc", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.491535318155286, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_7dd1cf1cc7e8bba290023907a0bd3d51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_63b3f7beef28757642b6da84054488a1 = $(`<div id="html_63b3f7beef28757642b6da84054488a1" style="width: 100.0%; height: 100.0%;">         <b>Kathmandu</b><br>         Lat: 27.697<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.1349<br>         μ (location): 76.9461mm<br>         σ (scale): 26.2257mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  127.8mm<br>         25-yr:  145.1mm<br>         50-yr:  156.5mm<br>         100-yr: 166.8mm<br>         </div>`)[0];
+                popup_7dd1cf1cc7e8bba290023907a0bd3d51.setContent(html_63b3f7beef28757642b6da84054488a1);
+            
+        
+
+        circle_marker_ecd7ef99a04c374c997af92b196b4f5d.bindPopup(popup_7dd1cf1cc7e8bba290023907a0bd3d51)
+        ;
+
+        
+    
+    
+            circle_marker_ecd7ef99a04c374c997af92b196b4f5d.bindTooltip(
+                `<div>
+                     Kathmandu: 166.8mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20d8b589cf7df1812f51b4c3ceda8c3a = L.circleMarker(
+                [27.3, 86.5],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3633c8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.72504378283713, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_f907abe6894f0237e833037538de5ff0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_228aaa0be74e2cd1633b014f36f86bdc = $(`<div id="html_228aaa0be74e2cd1633b014f36f86bdc" style="width: 100.0%; height: 100.0%;">         <b>Okhaldhunga</b><br>         Lat: 27.3<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.2726<br>         μ (location): 96.0799mm<br>         σ (scale): 29.2468mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  145.3mm<br>         25-yr:  158.5mm<br>         50-yr:  166.3mm<br>         100-yr: 172.8mm<br>         </div>`)[0];
+                popup_f907abe6894f0237e833037538de5ff0.setContent(html_228aaa0be74e2cd1633b014f36f86bdc);
+            
+        
+
+        circle_marker_20d8b589cf7df1812f51b4c3ceda8c3a.bindPopup(popup_f907abe6894f0237e833037538de5ff0)
+        ;
+
+        
+    
+    
+            circle_marker_20d8b589cf7df1812f51b4c3ceda8c3a.bindTooltip(
+                `<div>
+                     Okhaldhunga: 172.8mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91a815b29465fcfa50ae304708db825a = L.circleMarker(
+                [28.2, 83.981],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3300", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_8e77017b007a32fa1922283cc4d68f7f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e1ba0b013a9238a07defab57fff7b82 = $(`<div id="html_0e1ba0b013a9238a07defab57fff7b82" style="width: 100.0%; height: 100.0%;">         <b>Pokhara</b><br>         Lat: 28.2<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.2438<br>         μ (location): 241.5554mm<br>         σ (scale): 98.4653mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  412.1mm<br>         25-yr:  460.3mm<br>         50-yr:  489.5mm<br>         100-yr: 513.9mm<br>         </div>`)[0];
+                popup_8e77017b007a32fa1922283cc4d68f7f.setContent(html_0e1ba0b013a9238a07defab57fff7b82);
+            
+        
+
+        circle_marker_91a815b29465fcfa50ae304708db825a.bindPopup(popup_8e77017b007a32fa1922283cc4d68f7f)
+        ;
+
+        
+    
+    
+            circle_marker_91a815b29465fcfa50ae304708db825a.bindTooltip(
+                `<div>
+                     Pokhara: 513.9mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5dee077bddcc4c0cb0a28d14e786a73 = L.circleMarker(
+                [27.16, 84.98],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3e33c0", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.27768048258416, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_682e134a685f13970204f933469ad023 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aeba8c54f5d620059f207e2e761f36b2 = $(`<div id="html_aeba8c54f5d620059f207e2e761f36b2" style="width: 100.0%; height: 100.0%;">         <b>Simara</b><br>         Lat: 27.16<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.1217<br>         μ (location): 94.552mm<br>         σ (scale): 26.2324mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  146.2mm<br>         25-yr:  164.1mm<br>         50-yr:  176.0mm<br>         100-yr: 187.0mm<br>         </div>`)[0];
+                popup_682e134a685f13970204f933469ad023.setContent(html_aeba8c54f5d620059f207e2e761f36b2);
+            
+        
+
+        circle_marker_e5dee077bddcc4c0cb0a28d14e786a73.bindPopup(popup_682e134a685f13970204f933469ad023)
+        ;
+
+        
+    
+    
+            circle_marker_e5dee077bddcc4c0cb0a28d14e786a73.bindTooltip(
+                `<div>
+                     Simara: 187.0mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82fa8cc480d961e243a7afd643abf089 = L.circleMarker(
+                [28.6, 81.617],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1533e9", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.526172407083088, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_cee8bf574fcd007c2f79534583a96f18 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_033252c7dbdc2c8153df3d579e05aece = $(`<div id="html_033252c7dbdc2c8153df3d579e05aece" style="width: 100.0%; height: 100.0%;">         <b>Surkhet</b><br>         Lat: 28.6<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.3356<br>         μ (location): 73.4325mm<br>         σ (scale): 18.2979mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  102.3mm<br>         25-yr:  109.3mm<br>         50-yr:  113.2mm<br>         100-yr: 116.3mm<br>         </div>`)[0];
+                popup_cee8bf574fcd007c2f79534583a96f18.setContent(html_033252c7dbdc2c8153df3d579e05aece);
+            
+        
+
+        circle_marker_82fa8cc480d961e243a7afd643abf089.bindPopup(popup_cee8bf574fcd007c2f79534583a96f18)
+        ;
+
+        
+    
+    
+            circle_marker_82fa8cc480d961e243a7afd643abf089.bindTooltip(
+                `<div>
+                     Surkhet: 116.3mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6241fa596c09634b58c02a9e68c48424 = L.circleMarker(
+                [27.35, 87.667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5f339f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.46098462735941, "stroke": true, "weight": 1}
+            ).addTo(map_a926b11aa685ca5e0042da82c197d929);
+        
+    
+        var popup_d6ba0e7d0f1cc28f112794819311ee1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7dd1952925d3c3bc5b000bf65fc179d3 = $(`<div id="html_7dd1952925d3c3bc5b000bf65fc179d3" style="width: 100.0%; height: 100.0%;">         <b>Taplejung</b><br>         Lat: 27.35<br>         <hr>         <b>GEV Parameters</b><br>         ξ (shape): -0.1562<br>         μ (location): 119.6211mm<br>         σ (scale): 37.6404mm<br>         Type: Weibull (xi<0, bounded)<br>         <hr>         <b>Return Levels (mm/day)</b><br>         10-yr:  191.0mm<br>         25-yr:  214.4mm<br>         50-yr:  229.6mm<br>         100-yr: 243.1mm<br>         </div>`)[0];
+                popup_d6ba0e7d0f1cc28f112794819311ee1b.setContent(html_7dd1952925d3c3bc5b000bf65fc179d3);
+            
+        
+
+        circle_marker_6241fa596c09634b58c02a9e68c48424.bindPopup(popup_d6ba0e7d0f1cc28f112794819311ee1b)
+        ;
+
+        
+    
+    
+            circle_marker_6241fa596c09634b58c02a9e68c48424.bindTooltip(
+                `<div>
+                     Taplejung: 243.1mm (100yr)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
