@@ -30,6 +30,36 @@ The project demonstrates end-to-end applied statistical hydrology — from data 
 
 ---
 
+## Visualisations
+
+### Fig 1 — GEV Return Period Curves
+*Log-scale return period curves with Gringorten empirical plotting positions for all 11 stations. Pokhara (red) diverges sharply from all other stations, reflecting its unique orographic rainfall regime.*
+
+![Fig 1 – GEV Return Period Curves](outputs/figures/fig1_return_period_curves.png)
+
+---
+
+### Fig 2 — GEV Shape Parameter ξ by Station
+*Shape parameter classification: Fréchet (ξ>0, heavy tail / red), Gumbel (ξ≈0 / orange), Weibull (ξ<0, bounded / blue). Bhairahawa is the only station with a positive shape parameter, indicating an unbounded extreme tail.*
+
+![Fig 2 – GEV Shape Parameters](outputs/figures/fig2_gev_shape_params.png)
+
+---
+
+### Fig 3 — 100-Year Return Levels with 95% Bootstrap CI
+*Estimated 100-year daily rainfall return levels per station with 95% bootstrap confidence intervals (n=1,000 resamples). Wide CIs at long return periods reflect the inherent uncertainty of extrapolating beyond a 34-year observational record — an honest and expected outcome in extreme value analysis.*
+
+![Fig 3 – 100-Year Return Levels](outputs/figures/fig3_100yr_return_levels.png)
+
+---
+
+### Fig 4 — Interactive Geospatial Map
+*Interactive Folium map with circle markers scaled by 100-year return level. Clickable popups show full GEV parameters (ξ, μ, σ), GEV type, and return levels for T = 10, 25, 50, 100 years per station.*
+
+> **To view:** Download or clone the repo and open `outputs/figures/fig4_nepal_rainfall_map.html` in any browser. GitHub does not render HTML files inline.
+
+---
+
 ## Stations Analysed
 
 | Station | Latitude | Longitude | Elevation (m) | Region |
@@ -82,6 +112,7 @@ Fitting uses `scipy.stats.genextreme` (MLE). Return levels computed via quantile
 Bootstrap confidence intervals (n=1,000 resamples, 95% CI) computed for all return levels using the percentile method with a fixed random seed (42) for reproducibility.
 
 ### 5. Visualisation
+
 - **Fig 1:** GEV return period curves (log-scale) with Gringorten empirical plotting positions
   outputs/figures/fig1_return_period_curves.png
 - **Fig 2:** GEV shape parameter ξ by station (Fréchet/Gumbel/Weibull classification)
@@ -165,7 +196,7 @@ Interactive map: `outputs/figures/fig4_nepal_rainfall_map.html` — open in any 
 
 ## Relevance to PhD Research
 
-This project directly supports my doctoral research interests in:
+This project directly supports doctoral research interests in:
 
 - **Extreme value theory** applied to ungauged/data-scarce Himalayan catchments
 - **Hydroclimatic risk quantification** under monsoon variability
