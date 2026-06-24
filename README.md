@@ -26,7 +26,7 @@ The project demonstrates end-to-end applied statistical hydrology — from data 
 | Kathmandu | Weibull (xi=-0.135) | 167 mm/day | [115, 255] |
 | Jumla | Weibull (xi=-0.163) | 80 mm/day | [53, 145] |
 
-**Pokhara** records the highest extreme rainfall — over **3× the second-highest station** — driven by intense orographic uplift from the Annapurna massif (elevation 8,091m). Jumla, located in a high-altitude western rain shadow at 2,300m, records the lowest extremes. Bhairahawa is the only station with a positive shape parameter (Fréchet tail), consistent with unbounded convective storm intensities on the Terai plains.
+**Pokhara** records the highest extreme rainfall over **3× the second-highest station** — driven by intense orographic uplift from the Annapurna massif (elevation 8,091m). Jumla, located in a high-altitude western rain shadow at 2,300m, records the lowest extremes. Bhairahawa is the only station with a positive shape parameter (Fréchet tail), consistent with unbounded convective storm intensities on the Terai plains.
 
 ---
 
