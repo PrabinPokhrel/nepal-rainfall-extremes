@@ -170,7 +170,7 @@ nepal-rainfall-extremes/
 │   ├── raw/                    # Generated daily rainfall (136,598 rows)
 │   └── processed/              # Annual maxima per station-year (374 rows)
 ├── notebooks/
-│   └── 01_eda.ipynb            # Exploratory data analysis (executed)
+│   └── 01_eda.ipynb            # Exploratory data analysis 
 ├── src/
 │   ├── generate_data.py        # Stochastic rainfall generation
 │   ├── preprocess.py           # Block maxima extraction
