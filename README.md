@@ -33,14 +33,14 @@ The project demonstrates end-to-end applied statistical hydrology - from data ge
 ## Exploratory Data Analysis
 
 ### EDA Fig 1 - Mean Annual Rainfall by Station
-*Pokhara receives ~4,088mm annually — over 4× more than Jumla (~881mm). This reflects Nepal's steep west-to-east and altitude gradients in monsoon precipitation. The contrast between orographic (Pokhara), valley (Kathmandu), Terai plains (Bhairahawa, Simara), and high-altitude rain shadow (Jumla) stations is clearly visible.*
+*Pokhara receives ~4,088mm annually - over 4× more than Jumla (~881mm). This reflects Nepal's steep west-to-east and altitude gradients in monsoon precipitation. The contrast between orographic (Pokhara), valley (Kathmandu), Terai plains (Bhairahawa, Simara), and high-altitude rain shadow (Jumla) stations is clearly visible.*
 
 ![EDA Fig 1 - Mean Annual Rainfall](outputs/figures/eda_fig1_annual_totals.png)
 
 ---
 
 ### EDA Fig 2 - Monsoon Seasonality
-*June-September accounts for 75-85% of annual rainfall at all stations. July is consistently the peak month everywhere. Pokhara's orographic regime produces dramatically higher monthly totals, its July mean daily rainfall is approximately 6× higher than Jumla's. The pre-monsoon (March–May) contributes a secondary rainfall signal at eastern stations (Biratnagar).*
+*June-September accounts for 75-85% of annual rainfall at all stations. July is consistently the peak month everywhere. Pokhara's orographic regime produces dramatically higher monthly totals, its July mean daily rainfall is approximately 6× higher than Jumla's. The pre-monsoon (March-May) contributes a secondary rainfall signal at eastern stations (Biratnagar).*
 
 ![EDA Fig 2 - Monsoon Seasonality](outputs/figures/eda_fig2_seasonality.png)
 
