@@ -46,7 +46,7 @@ The project demonstrates end-to-end applied statistical hydrology - from data ge
 
 ---
 
-### EDA Fig 3 - Annual Maximum Daily Rainfall Trends (1990–2023)
+### EDA Fig 3 - Annual Maximum Daily Rainfall Trends (1990 - 2023)
 *High year-to-year variability at all stations is typical of extreme value series. Pokhara (red) consistently records the highest single-day events each year, with several years exceeding 400mm in a single day. No strong monotonic trend is visible over the 34-year period, though inter-annual variability is high - reflecting the influence of ENSO and Indian Ocean Dipole on Nepal monsoon intensity.*
 
 ![EDA Fig 3 - Annual Maximum Trends](outputs/figures/eda_fig3_annual_max_trends.png)
